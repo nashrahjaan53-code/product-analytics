@@ -37,4 +37,4 @@ python main.py
 - User Churn Rate
 
 ## Author
-Data Analyst Portfolio
+Nashrah Khan
