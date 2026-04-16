@@ -119,9 +119,10 @@ with col2:
     st.subheader("⭐ TOP FEATURES BY ADOPTION")
     feature_usage = df.groupby('feature_used').size().sort_values(ascending=True).tail(8)
     
-    fig = px.barh(
+    fig = px.bar(
         x=feature_usage.values,
         y=feature_usage.index,
+        orientation='h',
         color=feature_usage.values,
         color_continuous_scale='Viridis',
         labels={'x': 'Usage Count', 'y': 'Feature'},
